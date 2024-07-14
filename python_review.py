@@ -53,5 +53,6 @@ print(f"The coldest temperature was: {lowest_temp} on {lowest_temp_day}")
 print(f"\n\nThe avarage temperature was: {avarageTemp}")
 print(f"The days with above avarage temperature were:{above_avg_days}")
 
-
-
+sorted_temp = []
+sorted_temp.append(sorted(temperatures))
+print(sorted_temp)
