@@ -1,5 +1,5 @@
 def create_youtube_video(title,discription):
-	youtube_video = {"title": title,"discription": discription, "likes": 0, "dislikes": 0, "comments": "noComments" }
+	youtube_video = {"title": title,"discription": discription, "likes": 0, "dislikes": 0, "comments": "noComments"}
 	return youtube_video
 	
 def likes(youtube_video):
@@ -16,6 +16,11 @@ def add_comment(youtube_video,username,comment_text):
 	youtube_video["comments"] = {username : comment_text}
 	return youtube_video
 
+
+
+input_of_the_user = input("Add up to 5 hasgtags ")
+input_of_the_user = input_of_the_user.split()
+
 new_youtube_video = create_youtube_video("hi", "hello")
 likes_for_video = likes(new_youtube_video)
 dislikes_for_video = dislikes(new_youtube_video)
@@ -24,4 +29,4 @@ comments_of_video = add_comment(new_youtube_video,"MissMuffin","hellllloooo")
 
 for i in range(494):
 	likes_for_video = likes(new_youtube_video)
-print(likes_for_video)
+print(new_youtube_video)
